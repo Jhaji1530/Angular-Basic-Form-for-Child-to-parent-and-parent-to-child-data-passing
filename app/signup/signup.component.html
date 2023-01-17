@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="sign">
+        <h1>User registration</h1>
+        <p>{{childData}}</p>
+        <p>{{addUnconfirmed}}</p>
+        <div class="form-group">
+            <label for="firstname">FirstName:</label>
+            <input type="text" [(ngModel)]="data" placeholder="First Name" ngModel class="inpt">
+        </div>
+        <div>
+            <form #login="ngForm" (ngSubmit)="submit(login)">
+
+                <pre></pre>
+                <div class="form-group">
+                    <label for="lastname">LastName:&nbsp;</label>
+                    <input type="text" name="lastname" class="inpt" ngModel placeholder="Last name">
+                </div>
+                <pre></pre>
+                <div class="form-group">
+                    <label for="email">Email Id:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" name="email" class="form-control" ngModel placeholder="Email">
+                </div>
+                <pre></pre>
+                <div class="form-group">
+                    <label for="password">Password:&nbsp;&nbsp;</label>
+                    <input type="password" name="password" class="inpt" ngModel placeholder="password">
+                </div>
+                <address>
+                    <app-address [firstName]="data" (notify)="parentMethod($event)"
+                        (unconfirm)="cancelMethod($event)"></app-address>
+                </address>
+                <div class="btn">
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                    <button type="reset" class="btn2">Reset</button>
+                </div>
+            </form>
+        </div>

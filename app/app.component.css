@@ -1,0 +1,14 @@
+.test{
+    margin: 10px;
+}
+.navba{
+    position: relative;
+    border-radius: 25px;
+    background-color: aquamarine;
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 20px;
+    width: 600px;
+    height: 50000px;
+    margin: 10px;
+}

@@ -1,0 +1,22 @@
+/*.add{
+  border-radius: 25px;
+  background-color: blueviolet;
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px;
+  width: 300px;
+  height: 100px;
+  margin: 10px;
+  position: absolute;
+}*/
+.form-group {
+  margin: 10px;
+}
+
+.btn {
+  margin: 10px;
+}
+
+.btn {
+  left: 20px;
+}
